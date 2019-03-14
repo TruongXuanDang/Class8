@@ -68,32 +68,36 @@ public class Main {
             Connection conn = DriverManager.getConnection(DB_URL,DB_USER,DB_PASS);
             Statement statement = conn.createStatement();
 
-            int flag = 0;
-            do {
-                System.out.println("1. Watch Studentlist");
-                System.out.println("2. Insert Student");
-                System.out.println("3. Delete Student");
-                System.out.println("4. Exit");
-                System.out.println("Please choose a value: ");
-                int choice = scanner.nextInt();
-                switch (choice){
-                    case 1:
-                        watchStudentList(statement);
-                        break;
-                    case 2:
-                        insertStudent(statement,scanner);
-                        break;
-                    case 3:
-                        deleteStudent(statement,scanner);
-                        break;
-                    case 4:
-                        flag =1;
-                        break;
-                }
-
-            }while (flag ==0);
+            menu(scanner,statement);
 
         }
         catch (Exception e){}
+    }
+
+    public static void menu(Scanner scanner,Statement statement){
+        int flag = 0;
+        do {
+            System.out.println("1. Watch Studentlist");
+            System.out.println("2. Insert Student");
+            System.out.println("3. Delete Student");
+            System.out.println("4. Exit");
+            System.out.println("Please choose a value: ");
+            int choice = scanner.nextInt();
+            switch (choice){
+                case 1:
+                    watchStudentList(statement);
+                    break;
+                case 2:
+                    insertStudent(statement,scanner);
+                    break;
+                case 3:
+                    deleteStudent(statement,scanner);
+                    break;
+                case 4:
+                    flag =1;
+                    break;
+            }
+
+        }while (flag ==0);
     }
 }
