@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:controller="javafx_demo.Controller.List" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableView" layoutY="64.0" prefHeight="311.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="username" prefWidth="207.0" text="Username" />
+            <TableColumn fx:id="email" prefWidth="191.0" text="Email" />
+            <TableColumn fx:id="status" prefWidth="120.0" text="Status" />
+        </columns>
+      </TableView>
+      <Text layoutX="257.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Users">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#3f29e599" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button onAction="#registerAction" layoutX="517.0" layoutY="25.0" mnemonicParsing="false" text="Register" />
+   </children>
+</Pane>

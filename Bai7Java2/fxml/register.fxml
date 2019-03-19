@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:controller="javafx_demo.Controller.Register" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="39.0" layoutY="68.0" text="Username" />
+      <TextField fx:id="txtUsername" layoutX="39.0" layoutY="97.0" prefHeight="25.0" prefWidth="523.0" promptText="Username" />
+      <Text layoutX="271.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPassword" layoutX="39.0" layoutY="255.0" prefHeight="25.0" prefWidth="523.0" promptText="Password" />
+      <Label layoutX="39.0" layoutY="226.0" text="Password" />
+      <Button onAction="#registerAction" layoutX="39.0" layoutY="320.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="154.0" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtEmail" layoutX="39.0" layoutY="175.0" prefHeight="25.0" prefWidth="523.0" promptText="Email" />
+      <Label layoutX="39.0" layoutY="146.0" text="Email" />
+      <Hyperlink onAction="#backAction" layoutX="38.0" layoutY="30.0" text="&lt;&lt; Back" />
+   </children>
+</Pane>
