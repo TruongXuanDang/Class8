@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment7.Controller.CountApp">
+   <children>
+      <Label fx:id="labelCountApp" layoutX="246.0" layoutY="61.0" text="COUNT APP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRestart" layoutX="268.0" layoutY="228.0" mnemonicParsing="false" text="RESTART" />
+      <Button fx:id="buttonBegin" layoutX="498.0" layoutY="228.0" mnemonicParsing="false" onAction="#beginAction" text="BEGIN" />
+      <Button fx:id="buttonPause" layoutX="56.0" layoutY="228.0" mnemonicParsing="false" text="PAUSE" />
+      <RadioButton fx:id="radioUs" onAction="#changeUs" layoutX="56.0" layoutY="312.0" mnemonicParsing="false" text="EN" />
+      <RadioButton fx:id="radioVi" onAction="#changeVi" layoutX="132.0" layoutY="312.0" mnemonicParsing="false" text="VI" />
+      <Label fx:id="labelNumber" alignment="CENTER" layoutX="246.0" layoutY="114.0" prefHeight="93.0" prefWidth="107.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
