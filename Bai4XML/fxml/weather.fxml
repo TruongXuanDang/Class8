@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChangeWeather">
+   <children>
+      <Text layoutX="232.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather app">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text layoutX="62.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City: " />
+      <Label fx:id="labelCity" layoutX="139.0" layoutY="94.0" text="City" />
+      <Label fx:id="labelMinPres" layoutX="139.0" layoutY="134.0" text="MinPres" />
+      <Text layoutX="62.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min-pres: " />
+      <Label fx:id="labelMaxPres" layoutX="139.0" layoutY="171.0" text="MaxPres" />
+      <Text layoutX="62.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max-pres: " />
+      <Label fx:id="labelDescription" layoutX="139.0" layoutY="209.0" text="Description" />
+      <Text layoutX="62.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: " />
+      <Button fx:id="radioWeather" onAction="#changeWeather" layoutX="270.0" layoutY="269.0" mnemonicParsing="false" text="Weather" />
+   </children>
+</Pane>
