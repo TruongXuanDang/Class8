@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HourlyWeather">
+   <children>
+      <TextArea fx:id="textAreaWeather" layoutX="29.0" layoutY="139.0" prefHeight="234.0" prefWidth="542.0" />
+      <Text layoutX="174.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOURLY WEATHER APP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelCityName" layoutX="110.0" layoutY="101.0" text="CityName" />
+      <Text layoutX="29.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City: " />
+   </children>
+</Pane>
